@@ -13,12 +13,12 @@ class Solution {
         }return sub;
 
     }
-     public boolean pal(String str) {
+     public boolean pal(String k) {
         int left = 0;
-        int right = str.length() - 1;
+        int right = k.length()-1;
 
         while (left < right) {
-            if (str.charAt(left) != str.charAt(right)) {
+            if (k.charAt(left) != k.charAt(right)) {
                 return false;
             }
             left++;
